@@ -1,0 +1,9 @@
+language: Cpp
+script:
+- make
+- cd bin
+- ./my_prog 
+
+compiler: g++
+
+dist: xenial  
