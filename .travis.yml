@@ -1,8 +1,10 @@
 language: Cpp
 script:
 - make
+- make test
 - cd bin
-- ./my_prog 
+- ./calculator_test
+- git ls-files src/ | xargs clang-format -i && git diff --exit-code
 
 compiler: g++
 
